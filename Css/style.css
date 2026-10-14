@@ -1,9 +1,13 @@
+body {
+    padding: 0%;
+    margin: 0%;
+}
+
 nav {
     background-color: #FFFFFF;
     display: flex;
     justify-content: space-between;
-    margin-left: 3cm;
-    margin-right: 3cm;
+    padding: 0px 100px;
 }
 
 .nav-tabs {
@@ -39,7 +43,6 @@ nav img {
 .buttton {
     display: flex;
     align-items: center;
-    /* justify-content: center; */
 }
 
 .my-btn {
@@ -57,9 +60,9 @@ nav img {
 .hero {
     display: flex;
 }
-.first-sect{
-        margin-left: 3cm;
-    margin-right: 3cm;
+
+.first-sect {
+    padding: 40px 100px;
     background-color: #F3F7FA;
 }
 
@@ -97,68 +100,78 @@ nav img {
     border: 1px;
     border-radius: 10px;
 }
-.parent{
+
+.parent {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-left: 3cm;
-    margin-right: 3cm;
-    margin-top: 17px;
+    padding: 17px 100px 0px 100px;
 
 }
-.child{
+
+.child {
     display: flex;
     align-items: center;
     gap: 12px;
 }
-.icon{
-        width: 36px;
+
+.icon {
+    width: 36px;
     height: 36px;
     display: flex;
     align-items: center;
     border-radius: 999px;
 }
-.icon-text{
+
+.icon-text {
     font-weight: 600;
     font-style: 'Inter';
     font-size: 14px;
 }
-.second-sect{
-    margin: 1.5cm 3cm;
+
+.second-sect {
+    padding: 60px 100px;
     display: flex;
     flex-direction: column;
     gap: 24px;
 }
-.sect2-text{
+
+.sect2-text {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 8px;
 }
-.sect2-images{
+
+.sect2-images {
     display: flex;
     align-items: center;
     gap: 14px;
 }
-.sect2-img{
+
+.sect2-img {
     width: 394.67px;
     height: 210px;
 }
-.sect2-icon{
+
+.sect2-icon {
     width: 42px;
     height: 42px;
     border-radius: 10px;
 }
-.sect2-hero{
+
+.sect2-hero {
     border: 1px;
     border-color: #055491;
     border-radius: 16px;
 }
-.my-btn3{
+
+.my-btn3 {
     display: flex;
     justify-content: center;
 }
-.voir-btn{
+
+.voir-btn {
     width: 239px;
     height: 54px;
     border: 1px;
@@ -166,24 +179,236 @@ nav img {
     padding-left: 24px;
     padding-right: 24px;
 }
-.span2{
+
+.span2 {
     color: #0866C2;
 }
-.h3{
+
+.h3 {
     color: #0866C2;
     font-style: 'Inter';
     font-weight: 700;
     font-size: 12px;
 }
-.sect2-h1{
+
+.sect2-h1 {
     color: #102A43;
     font-style: 'Inter';
     font-weight: 700;
     font-size: 40px;
 }
-.sect2-p{
+
+.sect2-p {
     color: #486176;
     font-weight: 400;
     font-style: 'Inter';
     font-size: 16px;
+}
+
+.third-sect {
+    display: flex;
+    justify-content: space-between;
+    padding: 40px 100px;
+    background: #F3F7FA;
+}
+
+.third-sect-img1 {
+    max-width: 520px;
+    height: auto;
+    border-radius: 24px;
+}
+
+h4 {
+    color: #0866C2;
+    font-weight: 700;
+    font-style: 'Inter';
+    font-size: 16px;
+}
+
+.third-sect-h2 {
+    font-weight: 700;
+    font-style: 'Inter';
+    font-size: 40px;
+
+}
+
+.third-sect-img {
+    flex: 1;
+}
+
+.third-sect-text {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.third-sect-icon {
+    width: 22px;
+    height: 22px;
+    padding-top: 18px;
+}
+
+.icon-text {
+    display: flex;
+    gap: 40px;
+}
+
+.icon-text2 {
+    display: flex;
+}
+
+.icon-text3 {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+footer {
+    background: #102A43;
+    color: white;
+    padding: 60px 100px 20px 100px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-icon {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+}
+
+.social-media-icons {
+    width: 36px;
+    height: 36px;
+    border-radius: 8px;
+}
+
+.footer-icon2 {
+    width: 24px;
+    height: 24px;
+}
+
+.page-info {
+    display: flex;
+    align-items: center;
+}
+
+.ending {
+    display: flex;
+    justify-content: space-between;
+}
+
+.ending1 {
+    display: flex;
+    gap: 24px;
+}
+
+.hamburger-menu {
+    display: none;
+}
+
+/* mobile approach*/
+@media only screen and (max-width: 475px) {
+    .nav-tabs {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: flex;
+        margin-top: 25px;
+        justify-content: center;
+    }
+    .nav-phone{
+        display: flex;
+        justify-content: space-between;
+        gap: 70px;
+    }
+    nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0% 20px;
+    }
+    .buttton{
+        width: 335px;
+        justify-content: center;
+    }
+    .buttons{
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+
+    }
+    .my-btn{
+        width: 100%;
+    }
+    .my-btn2{
+       width: 100%; 
+    }
+    .hero{
+        flex-wrap: wrap;
+        display: flex;
+        justify-content: center;
+        gap: 12px;
+    }
+    .hero-img{
+        display: flex;
+        width: 335px;
+        height: 320px;
+        border-radius: 24px;
+
+    }
+    .first-sect{
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 0% 20px;
+    }
+    .parent{
+        flex-wrap: wrap;
+    }
+    .second-sect{
+        padding: 0% 20px;
+    }
+    .sect2-text{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .sect2-images{
+        flex-wrap: wrap;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .sect2-img{
+        width: 335px;
+        height: 200px;
+    }
+    .voir-btn{
+        width: 100%;
+    }
+    .third-sect{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 10px 10px;
+    }
+    .third-sect-img{
+        display: flex;
+        align-items: center;
+    }
+    .third-sect-img1{
+        width: 335px;
+        height: 280px;
+    }
+    .icon-text{
+        display: flex;
+        flex-direction: column;
+    }
 }
